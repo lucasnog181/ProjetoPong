@@ -10,10 +10,10 @@ font_data = ExtResource( 1 )
 [node name="Score_UI" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -2.245
-margin_top = 2.24496
-margin_right = -2.245
-margin_bottom = 2.245
+margin_left = -1.245
+margin_top = 1.65918
+margin_right = -1.245
+margin_bottom = 1.65924
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -22,9 +22,9 @@ __meta__ = {
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -119.337
-margin_top = 49.694
+margin_top = 20.0
 margin_right = -79.337
-margin_bottom = 115.694
+margin_bottom = 86.0
 custom_fonts/font = SubResource( 1 )
 text = "0"
 align = 1
@@ -37,10 +37,26 @@ __meta__ = {
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = 80.663
-margin_top = 49.694
+margin_top = 20.0
 margin_right = 120.663
-margin_bottom = 115.694
+margin_bottom = 86.0
 custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CountDownLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -19.1654
+margin_top = 121.414
+margin_right = 20.8346
+margin_bottom = 187.414
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.984314, 0.972549, 0.0235294, 1 )
 text = "0"
 align = 1
 valign = 1

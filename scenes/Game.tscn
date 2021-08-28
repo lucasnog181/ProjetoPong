@@ -20,6 +20,10 @@ margin_right = 481.006
 margin_bottom = 5.32806
 script = ExtResource( 8 )
 
+[node name="Timer" type="Timer" parent="Score_UI"]
+wait_time = 2.0
+one_shot = true
+
 [node name="paddle" parent="." instance=ExtResource( 2 )]
 position = Vector2( 43.9432, 279.699 )
 script = ExtResource( 3 )
@@ -31,4 +35,5 @@ position = Vector2( 480.099, 274.659 )
 position = Vector2( 919.311, 279.699 )
 script = ExtResource( 6 )
 
+[connection signal="timeout" from="Score_UI/Timer" to="Score_UI" method="_on_Timer_timeout"]
 [connection signal="player_score" from="ball" to="Score_UI" method="_on_ball_player_score"]

@@ -38,9 +38,14 @@ func _physics_process(delta):
 func reset():
 	position = Vector2(482.5 , 285)	
 	
+func stop():
+	velocite = Vector2(000.0,0.0)
+	
+func resertBall():
+	  velocite = Vector2(500.0,0.0)
+	
 func y_from_collision(collision):
 	var paddle_y_extent = collision.collider.get_node("CollisionShape2D").shape.extents.y
 	var normalized_value = (position.y - collision.collider.position.y)/paddle_y_extent
 	return normalized_value * rebound_intensity
-
 
